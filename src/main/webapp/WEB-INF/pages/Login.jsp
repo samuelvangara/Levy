@@ -7,8 +7,12 @@
 </head>
 <hr>
 <body>
+	<h3>${FailureLoginMessage}</h3>
 	<form name="welcome"
-		action="${pageContext.request.contextPath}/welcome" method="get">
+		action="${pageContext.request.contextPath}/welcome" method="post">
+		Name: <input type="text" title="Enter UserName" name="username" />
+		Password: <input type="password" title="Enter Password"
+			name="password">
 		<button type="Submit">LogIn</button>
 	</form>
 </body>
