@@ -7,8 +7,22 @@
 <title>Levy</title>
 <link rel="shortcut icon"
 	href="http://nasuke.net/wp-content/uploads/favorite.ico" />
+<%
+	String UserName = request.getAttribute("Username").toString();
+	String Password = request.getAttribute("Password").toString();
+%>
 </head>
 <body>
 	<h1>Welcome to Levy</h1>
+	<h3 align="left">
+		UserName:<%
+		out.print(UserName);
+	%>
+	</h3>
+	<h3 align="left">
+		Password:<%
+		out.print(Password);
+	%>
+	</h3>
 </body>
 </html>
