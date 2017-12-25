@@ -6,12 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value = "/")
-public class loginController {
+@RequestMapping(value = "/welcome")
+public class WelcomeController {
 
 	@RequestMapping(method = RequestMethod.GET)
-	public String LoginControlPagePathGet(Model model) {
-		return "Login";
+	public String WelcomeControlPagePathGet(Model model) {
+		return "Welcome";
 	}
-
 }
